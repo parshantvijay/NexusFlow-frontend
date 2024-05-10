@@ -1,0 +1,146 @@
+:root {
+  --color-primary: #8a2be2; /* Purple */
+  --color-dark: #000; /* Black */
+  --color-white: #fff;
+  --dark-blue: #000080;
+  --light-blue: #add8e6;
+}
+
+.layout {
+  display: flex;
+}
+
+main {
+  width: 100%;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 230px;
+  height: 100vh;
+  flex-shrink: 0;
+  background-color: var(--color-dark);
+  overflow: auto;
+  color: var(--color-white);
+  transition: all 0.5s;
+}
+
+.top_section {
+  display: flex;
+  justify-content: space-between;
+  
+  align-items: center;
+  padding: 5px 5px;
+  transition: all 0.5s;
+  background-color: #000;
+  height: 70px;
+
+}
+
+.logo {
+  // scale: 2;
+  width: 150px;
+}
+
+.bars {
+  display: flex;
+  font-size: 30px;
+  cursor: pointer;
+  color: var(--color-white);
+  transition: all 0.3s;
+
+
+}
+
+.bars:hover {
+  font-size: 27px;
+}
+
+.sidebar-item {
+  padding: 0.75em 1em;
+  display: block;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 0.15s;
+}
+
+
+.sidebar-title {
+  display: flex;
+  font-size: 1.2em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-title span {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 12px;
+  transition: all 0.5s;
+  font-size: 1.6rem;
+}
+
+.sidebar-title span .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5em;
+  font-size: 25px;
+}
+
+.sidebar-title .arrow-icon {
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.sidebar-item.open > .sidebar-title .arrow-icon {
+  transform: rotate(90deg);
+}
+
+.sidebar-content {
+  padding-top: 0.25em;
+  height: 0;
+  overflow: hidden;
+}
+
+.sidebar-item.open > .sidebar-content {
+  height: auto;
+}
+
+.s-child {
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+
+a {
+  color: var(--color-dark);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.active {
+  color: var(--color-primary);
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: var(--color-primary); /* Change background to purple */
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-color: var(--color-primary); /* Change line to purple */
+}
+
+.sublink .sidebar-item .sidebar-title {
+  padding-left: 40px;
+}

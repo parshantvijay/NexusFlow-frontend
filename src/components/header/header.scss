@@ -1,0 +1,55 @@
+// header.scss
+
+.header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  
+  h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .--fw-thin {
+    font-weight: 300;
+    color: #fff;
+  }
+  
+  .--color-danger {
+    color: #8a2be2; // Your desired purple color
+  }
+  
+  .--flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .--btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+    &.--btn-danger {
+      background-color: #8a2be2; // Your desired purple color
+      color: white;
+      
+      &:hover {
+        background-color: darkpurple; // Darken the color on hover
+      }
+    }
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid #333; // Darker border color
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}

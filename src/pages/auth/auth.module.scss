@@ -1,0 +1,79 @@
+.containerr {
+  position: absolute; /* Ensure it covers the entire viewport */
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.form {
+  width: 500px;
+  padding: 40px;
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  color: #fff;
+}
+
+
+.form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form button {
+  width: 100%; /* Changed width to 100% for responsiveness */
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.form input[type="email"],
+.form input[type="password"] {
+  padding-left: 15px;
+}
+
+.form button {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form button:hover {
+  background-color: #3d218c;
+}
+
+.forgot {
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 15px;
+  display: block;
+  text-align: right;
+  font-size: 12px;
+}
+
+.register {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.register p {
+  display: inline;
+  color: #fff;
+}
+
+.register a {
+  text-decoration: none;
+  color: #fff;
+}

@@ -1,0 +1,70 @@
+.product-list {
+  color: #333;
+
+  .table {
+    padding: 5px;
+    width: 100%;
+    overflow-x: auto;
+
+    .search {
+      width: 100%;
+      max-width: 300px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 1.4rem;
+      border-radius: 20px;
+
+
+      thead {
+        background-color: #9d219f47;
+        color: #fff;
+        border-radius: 20px;
+      }
+
+      th, td {
+        vertical-align: top;
+        padding: 8px;
+        text-align: left;
+        color: #fff;
+        
+
+        &.icons {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+
+          > * {
+            margin-right: 7px;
+            cursor: pointer;
+            vertical-align: middle;
+          }
+        }
+      }
+
+      tr {
+        border-bottom: 1px solid #cccccc4e;
+
+        &:nth-child(even) {
+          background-color: #2e2e2e47; /* Replace with your theme's background color */
+        }
+
+        &:hover {
+          cursor: pointer;
+          background-color: rgba(31, 147, 255, 0.059); /* Replace with your theme's hover color */
+        }
+      }
+    }
+  }
+}
+
+.pagination {
+  color: white;
+}
+
+.pagination .page-num {
+  color: white;
+  border-color: white;
+}

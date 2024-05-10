@@ -1,0 +1,44 @@
+// ProductDetail.scss
+
+.product-detail {
+  margin-bottom: 5rem;
+  width: 100%;
+  max-width: 500px;
+  color: white; // Set text color to white
+  .card {
+    width: 100%;
+    // max-width: 500px;
+    padding: 20px;
+    background-color: #292929; // Dark background color
+    border: 1px solid #4b4b4b1c; // Purple border color
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); // Add shadow for depth
+    .detail {
+      & > * {
+        margin-bottom: 1rem;
+      }
+      .badge {
+        background-color: #8d36df35; // Purple badge background color
+        color: white; // White text color
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 3px;
+      }
+      p {
+        color: white;
+      }
+      p b {
+        color: #8a2be2; // Purple text color for bold elements
+      }
+    }
+  }
+}
+
+.group {
+ background-color: #00000043;
+  padding: 5px;
+  color: white;
+}
+
+.whitee {
+  color: white;
+}
